@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Diogo Ferreira" />
+    <meta name="description" content="Website sobre Odivelas" />
+    <meta name="keywords" content="Odivelas,Cultura,Cidade do Desporto" />
+    <title>Quizz</title>
+</head>
+<body>
+    <section>
+        <h3>
+            Quizz
+        </h3>
+        
+        <p>
+            Nesta página podes testar os teus conhecimentos sobre Odivelas.
+        </p>
+        <form action="">
+            <fieldset>
+                <Legend>City Quizz</Legend>
+                <fieldset>
+                    <br>
+                    Nome : <input type="text" name="nome" id="nome"><br><br>
+                    Apelido : <input type="text" name="apelido" id="apelido"><br><br>
+                    Email : <input type="email" name="email" id="email"><br><br> 
+
+                </fieldset > 
+                <br><hr><br>
+                <fieldset>
+                    <legend>Perguntas</legend>
+
+                    <form method="POST" action="mailto:diomferreira@gmail.com" enctype="multipart/form-data">
+                        <h2>Pergunta 1:</h2>
+                        <label for="pergunta1">Qual é o monumento mais famoso de Odivelas?</label>
+                        <br>
+                        <input type="text" id="pergunta1" name="pergunta1" autocomplete="off" required>
+                        <br><br>
+                  
+                        <h2>Pergunta 2:</h2>
+                        <label for="pergunta2">Odivelas é uma cidade situada em que região de Portugal?</label>
+                        <br>
+                        <select id="pergunta2" name="pergunta2" required>
+                          <option value="">Selecione uma opção</option>
+                          <option value="norte">Norte</option>
+                          <option value="centro">Centro</option>
+                          <option value="lisboa">Lisboa</option>
+                          <option value="alentejo">Alentejo</option>
+                          <option value="algarve">Algarve</option>
+                        </select>
+                        <br><br>
+                  
+                        <h2>Pergunta 3:</h2>
+                        <label for="pergunta3">Quais destas atividades são populares em Odivelas?</label>
+                        <br>
+                        <input type="checkbox" id="pergunta3a" name="pergunta3[]" value="futebol">
+                        <label for="pergunta3a">Futebol</label>
+                        <br>
+                        <input type="checkbox" id="pergunta3b" name="pergunta3[]" value="basquetebol">
+                        <label for="pergunta3b">Basquetebol</label>
+                        <br>
+                        <input type="checkbox" id="pergunta3c" name="pergunta3[]" value="dança">
+                        <label for="pergunta3c">Dança</label>
+                        <br>
+                        <input type="checkbox" id="pergunta3d" name="pergunta3[]" value="teatro">
+                        <label for="pergunta3d">Teatro</label>
+                        <br><br>
+                  
+                        <h2>Pergunta 4:</h2>
+                        <label for="pergunta4">Em que ano foi fundada a cidade de Odivelas?</label>
+                        <br>
+                        <input type="number" id="pergunta4" name="pergunta4" min="0" max="2023" required>
+                        <br><br>
+                  
+                        <h2>Pergunta 5:</h2>
+                        <label for="pergunta5">Que cor é a bandeira de Odivelas?</label>
+                        <br>
+                        <input type="color" id="pergunta5" name="pergunta5" required>
+                        <br><br>
+
+                        <h2>Pergunta 6:</h2>
+                        <label for="pergunta6">Quantas freguesias tema cidade de Odivelas?</label>
+                        <br>
+                        <input type="range" id="pergunta6" name="pergunta6" min="1" max="10" required>
+                        <br><br>
+
+                        <h2>Pergunta 7:</h2>
+                        <label for="pergunta7">Qual é a data da Feira Medieval de Odivelas deste ano?</label>
+                        <br>
+                        <input type="date" id="pergunta7" name="pergunta7" min="2023-01-01" max="2023-12-31" required>
+                        <br><br>
+                      
+                        <h2>Pergunta 8:</h2>
+                        <label for="pergunta8">Qual é o prato típico de Odivelas?</label>
+                        <br>
+                        <input type="text" id="pergunta8" name="pergunta8" autocomplete="off" required>
+                        <br><br>
+                      
+                        <h2>Pergunta 9:</h2>
+                        <label for="pergunta9">Qual é o nome da principal zona comercial de Odivelas?</label>
+                        <br>
+                        <input type="text" id="pergunta9" name="pergunta9" autocomplete="off" required>
+                        <br><br>
+                      
+                        <h2>Pergunta 10:</h2>
+                        <label for="pergunta10">Qual é a música mais famosa sobre Odivelas?</label>
+                        <br>
+                        <input type="text" id="pergunta10" name="pergunta10" autocomplete="off" required>
+                        <br><br>
+                      
+                        <h2>Comentário:</h2>
+                        <label for="comentario">Deixe um comentário sobre Odivelas:</label>
+                        <br>
+                        <textarea id="comentario" name="comentario" rows="5" cols="50" maxlength="500" required></textarea>
+                        <br><br>
+                      
+                        <input type="submit" value="Submeter">
+                      </form>
+                </fieldset>
+            </fieldset>
+        </form>
+    </section>
+    
+</body>
+</html>
