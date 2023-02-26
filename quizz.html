@@ -8,6 +8,15 @@
     <title>Quizz</title>
 </head>
 <body>
+    <nav>
+        <p>
+          <a href="index.html" class="menu-link">Introdução</a>
+          <a href="local.html" class="menu-link">Localização</a>
+          <a href="multimedia.html" class="menu-link"><b>Multimedia</b></a>
+          <a href="info.html" class="menu-link">Informação</a>
+          <a href="quizz.html" class="menu-link">Quizz</a>
+        </p>
+        </nav>
     <section>
         <h3>
             Quizz
@@ -21,9 +30,9 @@
                 <Legend>City Quizz</Legend>
                 <fieldset>
                     <br>
-                    Nome : <input type="text" name="nome" id="nome"><br><br>
-                    Apelido : <input type="text" name="apelido" id="apelido"><br><br>
-                    Email : <input type="email" name="email" id="email"><br><br> 
+                    Nome : <input type="text" name="nome" id="nome" placeholder="First Name" autofocus><br><br>
+                    Apelido : <input type="text" name="apelido" id="apelido" placeholder="Last Name"><br><br>
+                    Email : <input type="email" name="email" id="email" placeholder="email@example.com"><br><br> 
 
                 </fieldset > 
                 <br><hr><br>
@@ -31,23 +40,24 @@
                     <legend>Perguntas</legend>
 
                     <form method="POST" action="mailto:diomferreira@gmail.com" enctype="multipart/form-data">
+                        
                         <h2>Pergunta 1:</h2>
                         <label for="pergunta1">Qual é o monumento mais famoso de Odivelas?</label>
                         <br>
-                        <input type="text" id="pergunta1" name="pergunta1" autocomplete="off" required>
+                        <input type="text" id="pergunta1" name="pergunta1" autocomplete="off" size="35" required>
                         <br><br>
                   
                         <h2>Pergunta 2:</h2>
-                        <label for="pergunta2">Odivelas é uma cidade situada em que região de Portugal?</label>
+                        <label for="pergunta2">Odivelas é uma cidade situada em que região(s) de Portugal?</label>
                         <br>
-                        <select id="pergunta2" name="pergunta2" required>
-                          <option value="">Selecione uma opção</option>
-                          <option value="norte">Norte</option>
-                          <option value="centro">Centro</option>
-                          <option value="lisboa">Lisboa</option>
-                          <option value="alentejo">Alentejo</option>
-                          <option value="algarve">Algarve</option>
-                        </select>
+                        <input type="text" id="pergunta2" name="pergunta2" list="regioes" multiple required>
+                        <datalist id="regioes">
+                        <option value="Norte">
+                        <option value="Centro">
+                        <option value="Lisboa">
+                        <option value="Alentejo">
+                        <option value="Algarve">
+                        </datalist>
                         <br><br>
                   
                         <h2>Pergunta 3:</h2>
@@ -99,7 +109,7 @@
                         <h2>Pergunta 9:</h2>
                         <label for="pergunta9">Qual é o nome da principal zona comercial de Odivelas?</label>
                         <br>
-                        <input type="text" id="pergunta9" name="pergunta9" autocomplete="off" required>
+                        <input type="text" id="pergunta9" name="pergunta9" autocomplete="off" pattern="[A-Za-z]" required>
                         <br><br>
                       
                         <h2>Pergunta 10:</h2>
@@ -107,6 +117,35 @@
                         <br>
                         <input type="text" id="pergunta10" name="pergunta10" autocomplete="off" required>
                         <br><br>
+
+                        <h2>Pergunta 11:</h2>
+                        <label for="pergunta11">Qual é a equipa de futebol mais popular em Odivelas?</label>
+                        <br>
+                        <input type="radio" id="pergunta11a" name="pergunta11" value="fco-divelas">
+                        <label for="pergunta11a">FCO</label>
+                        <br>
+                        <input type="radio" id="pergunta11b" name="pergunta11" value="odivelas-fc">
+                        <label for="pergunta11b">Odivelas FC</label>
+                        <br>
+                        <input type="radio" id="pergunta11c" name="pergunta11" value="sc-odivelas">
+                        <label for="pergunta11c">SC Odivelas</label>
+                        <br>
+                        <input type="radio" id="pergunta11d" name="pergunta11" value="outro">
+                        <label for="pergunta11d">Outro</label>
+                        <br><br>
+
+                        <h2>Pergunta 12:</h2>
+                        <label for="pergunta12">Qual destas imagens representa o monumento mais famoso de Odivelas?</label>
+                        <br><br>
+                        <input type="radio" id="pergunta12a" name="pergunta12" value="mosteiro">
+                        <label for="pergunta12a"><img src="/images/mosteiro.jpg" alt="Mosteiro de Odivelas" width="300"></label>
+                        <br>
+                        <input type="radio" id="pergunta12b" name="pergunta12" value="estatua">
+                        <label for="pergunta12b"><img src="/images/estatua.jpg" alt="Estatua de Odivelas" width="300"></label>
+                        <br>
+                        <input type="radio" id="pergunta12c" name="pergunta12" value="praia">
+                        <label for="pergunta12c"><img src="/images/praia.jpg" alt="Praia de Odivelas" width="300"></label>
+<br><br>
                       
                         <h2>Comentário:</h2>
                         <label for="comentario">Deixe um comentário sobre Odivelas:</label>
