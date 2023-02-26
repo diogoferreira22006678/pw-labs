@@ -1,0 +1,214 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(212, 212, 212);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Navigation styles and fix it at the top*/
+  nav {
+    /* Make sure the navigation as a physical space and doesn't overlap the content */
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: #333;
+    color: #fff;
+    z-index: 999;
+    padding: 10px;
+  }
+  
+  .menu-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .menu-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main section styles */
+  section {
+    padding: 20px;
+  }
+  
+  h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="color"],
+  input[type="date"],
+  input[type="range"],
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  input[type="color"] {
+    height: 50px;
+    width: 100px;
+    padding: 0;
+    border: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  fieldset:nth-of-type(1) {
+    border: 2px solid #0099cc;
+    margin: 10px;
+    padding: 10px;
+    color: #333;
+    background-color: #e6f2ff;
+  }
+  
+  fieldset:nth-of-type(2) {
+    border: 2px solid #ff9933;
+    margin: 10px;
+    padding: 10px;
+    color: #333;
+    background-color: #fff2e6;
+  }
+  
+  fieldset:nth-of-type(3) {
+    border: 2px solid #99cc00;
+    margin: 10px;
+    padding: 10px;
+    color: #333;
+    background-color: #e6ffe6;
+  }
+  
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 24px;
+    }
+    legend {
+      font-size: 20px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      font-size: 14px;
+    }
+  }
+
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* adjust spacing between text and fieldset */
+form {
+    margin-top: 16px;
+  }
+
+  * Selecting the parent element of fieldset using direct descendant selector */
+  form > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Selecting fieldset using attribute selector */
+  fieldset[class="personal"] {
+    margin: 20px 10px;
+    width: calc(50% - 20px);
+  }
+  
+  /* Selecting fieldset using pseudo-class */
+  fieldset:nth-of-type(2n) {
+    margin-left: 0;
+  }
+  
+  /* Selecting legend using direct descendant selector */
+  fieldset > legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Selecting input elements using attribute selector */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  /* Selecting submit button using class selector */
+  button.submit {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Selecting error message using attribute selector */
+  span[class="error"] {
+    color: red;
+    margin-top: 5px;
+    display: block;
+  }
