@@ -1,0 +1,85 @@
+* {
+    font-family: 'MyWebFont', sans-serif;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #aaaaaa;
+}
+
+a{
+    position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        -ms-transform: translate(-50%, -50%); 
+        background-color: #555555; 
+        color: white; 
+        padding: 16px 32px; 
+        text-align: center; 
+        text-decoration: none; 
+        display: inline-block; 
+        font-size: 16px; 
+        margin: 4px 2px; 
+        cursor: pointer; 
+        border-radius: 12px;
+}
+
+p{
+    text-align: center;
+    
+}
+
+a:hover{
+    background-color: #777777;
+}
+
+#container {
+    background-color: #aaaaaa;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+
+
+/* capitais as the 9 items in the grid */
+.capitais{
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    align-items: space-around;
+    background-color: rgb(238,248,248);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0 rgba(46, 42, 42, 0.2);
+    margin: 10px;
+}
+
+.capitais > div {
+    /* this is the same as .capitais but selects only descendents of the div capitais */
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0 rgba(46, 42, 42, 0.2);
+    margin: 10px;
+}
+
+.capitais img {
+    border-radius: 20px 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
