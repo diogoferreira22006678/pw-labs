@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.1</title>
+            <style>
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: auto;
+                    grid-template-areas:
+                        "header header header"
+                        "nav main aside"
+                        "footer footer footer";
+                    grid-gap: 10px;
+                    height: 150vh;
+                }
+                .header {
+                    grid-area: header;
+                    background-color: #2196F3;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                    font-size: 2rem;
+                }
+                .nav {
+                    grid-area: nav;
+                    background-color: #4CAF50;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+                .main {
+                    grid-area: main;
+                    background-color: #f2f2f2;
+                    padding: 10px;
+                    font-size: 1.2rem;
+                }
+                .article {
+                    grid-area: article;
+                    background-image: url('https://picsum.photos/400/300');
+                    background-size: cover;
+                }
+                .aside {
+                    grid-area: aside;
+                    background-image: url('https://picsum.photos/400/300');
+                    background-size: cover;
+                }
+                .footer {
+                    grid-area: footer;
+                    background-color: #2196F3;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="grid-container">
+                <div class="header">Header</div>
+                <div class="nav">Nav</div>
+                <div class="main">Main</div>
+                <div class="article"></div>
+                <div class="aside"></div>
+                <div class="footer">Footer</div>
+            </div>
+        </body>
+        </html>

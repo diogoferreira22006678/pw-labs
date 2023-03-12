@@ -1,0 +1,184 @@
+* {
+    font-family: 'MyWebFont', sans-serif;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+#container-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 5%;
+    grid-column-gap: 5%;
+}
+
+/* Make body div only affect the menu.html */
+body {
+    background-color: rgb(255, 217, 161);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    padding: 20px;
+    border: #555555;
+    /* Make the h1 with a border with 20 px of space in every corner */
+    border-radius: 20px;
+    /* Make the h1 with a shadow with 20 px of space in every corner */
+    box-shadow: 5px 5px 15px 0 rgba(46, 42, 42, 0.2);
+}
+
+img {
+    display: inline-block;
+}
+
+nav {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 5%;
+    grid-column-gap: 5%;
+    margin: auto;
+    width: fit-content;
+  }
+  
+  nav a {
+    background-color: #dadada;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 10%;
+  }
+  
+  nav a:hover {
+    background-color: #e2e2e2;
+  }
+  
+
+
+p{
+    text-align: center;
+}
+
+a:hover{
+    background-color: #777777;
+}
+
+#background-tables{
+    width: 100%;
+    height: 100%;
+}
+
+#container {    
+    /* Make the container a flex container */
+    display: flex;
+    /* Make the container a flex container */
+    flex-direction: column;
+    /* Center the content of the container */
+    align-items: center;
+    /* Center the content of the container */
+    justify-content: center;
+    /* Set the height of the container to 100% of the viewport */
+    height: 100vh;
+    /* Set the width of the container to 100% of the viewport */
+    width: 100vw;
+    /* Some padding top to make the content appear below the navbar */
+    padding-top: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Make textDiv Appear in Front of Image */
+#textDiv {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* capitais as the 9 items in the grid */
+.capitais{
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    align-items: space-around;
+    background-color: rgb(238,248,248);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0 rgba(46, 42, 42, 0.2);
+    margin: 10px;
+}
+
+.capitais > div {
+    /* this is the same as .capitais but selects only descendents of the div capitais */
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0 rgba(46, 42, 42, 0.2);
+    margin: 10px;
+}
+
+.capitais img {
+    border-radius: 20px 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-menu {
+    position: relative;
+    height: 100vh;  
+    width: 100vw;
+    background-image: url("https://source.unsplash.com/xg8z_KhSorQ");
+    background-size: cover;
+    background-position: center center;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 60%;
+    height: 60%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    backdrop-filter: blur(10%);
+}
+
+a {
+    top: 50%;
+    left: 50%;
+    background-color: #555555;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+a:hover {
+    background-color: #777777;
+}
