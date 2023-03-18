@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Seu Nome" />
+    <meta name="description" content="Website sobre Odivelas" />
+    <meta name="keywords" content="Odivelas,Cultura,Cidade do Desporto" />
+    <link rel="stylesheet" href="../lab2/estilos.css">
+    <title>Odivelas - Cidade do Desporto e da Cultura</title>
+    <style>
+      body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/odivelas1_grande_blur.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  margin-left: 5%;
+    margin-right: 5%;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <p>
+        <a href="../lab2/index.html" class="menu-link">🏡 Home</a>
+        <a href="../lab2/local.html" class="menu-link">🗺 Localização</a>
+        <a href="../lab2/multimedia.html" class="menu-link">📷 Multimedia</a>
+        <a href="../lab2/info.html" class="menu-link">ℹ️ Informação</a>
+        <a href="../lab2/quizz.html" class="menu-link">🎨 Quizz</a>
+        <a href="../lab2/html5-css.html" class="menu-link">🤔 HTML5 e CSS </a>
+        <a href="../lab3/menu.html" class="menu-link">🧰 Lab 3</a>
+        <a href="index.html" class="menu-link">🦸‍♀️ <b>Lab 4</b></a>
+      </p>
+    </nav>
+    <section class="hero">
+        <div class="hero-overlay">
+          <h1>Bem-vindo(a) ao Lab4</h1>
+          <p>You, me, or nobody is gonna hit as hard as life. But it ain’t about how hard you hit. It’s about how hard you can get hit and keep moving forward; how much you can take and keep moving forward. That’s how winning is done!</p>
+          <div class="menu">
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
