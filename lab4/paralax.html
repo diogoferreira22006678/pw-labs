@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax Effect</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			height: 2000px; /* adjust this value as needed */
+			background-image: url('https://picsum.photos/800/1200');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		.parallax {
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.5); /* add a semi-transparent overlay for better text readability */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+			position: relative;
+		}
+
+		.parallax h1 {
+			color: white;
+			font-size: 4rem;
+			margin-top: 0;
+		}
+
+		.parallax p {
+			color: white;
+			font-size: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		.parallax-inner {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+        #arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+	</style>
+</head>
+<body>
+
+    <a href="index.html" id="arrow">
+        <img src="/images/arrow.png" alt="Arrow" width="50" height="50">
+    </a>
+
+	<div class="parallax">
+		<div class="parallax-inner">
+			<h1>Welcome to my Parallax Effect Demo</h1>
+			<p>Scroll down to see more</p>
+		</div>
+	</div>
+
+	<div style="height: 1000px;"> <!-- adjust this value as needed -->
+		<p>Some content here</p>
+		<p>More content here</p>
+	</div>
+
+	<div class="parallax">
+		<div class="parallax-inner">
+			<h1>Another section with parallax effect</h1>
+			<p>Scroll up to go back to the top</p>
+		</div>
+	</div>
+
+</body>
+</html>

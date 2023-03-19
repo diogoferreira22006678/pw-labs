@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Vídeo de background da cidade</title>
+	<style>
+		video {
+			position: fixed;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+			min-height: 100%;
+			z-index: -1;
+			object-fit: cover;
+		}
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0,0,0,0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.overlay h1 {
+			color: #fff;
+			font-size: 5rem;
+			margin: 0;
+			text-align: center;
+		}
+        #arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+	</style>
+</head>
+<body>
+    <a href="index.html" id="arrow">
+        <img src="/images/arrow.png" alt="Arrow" width="50" height="50">
+    </a>
+	<video autoplay muted loop>
+		<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+		<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+		Your browser does not support the video tag.
+	</video>
+	<div class="overlay">
+		<h1>Bem-vindo ao Vídeo</h1>
+	</div>
+</body>
+</html>
